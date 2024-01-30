@@ -1,0 +1,19 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: lightpink;
+    height: 95vh;
+    aspect-ratio: 1 /1;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.newDiv {
+
+    border: 1px solid black;
+    aspect-ratio: 1 / 1;
+
+}
