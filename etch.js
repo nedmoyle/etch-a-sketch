@@ -25,16 +25,18 @@ function createDivs(numberOfDivs) {
     // we use the .forEach method to iterate through each cell
     divs.forEach((cell) => {
     
+
       // and for each one we add a 'click' listener
-      cell.addEventListener('mouseenter', () => {
-        cell.style.backgroundColor = 'grey'
-        // cell.style.opacity = ;
+      cell.addEventListener('mouseover', () => {
+        // cell.style.backgroundColor = 'grey'
+        let opacity = Number(cell.style.opacity);
+        cell.style.opacity = opacity >= 1 ? "1" : opacity + 0.1 + "";
       });
     
-      cell.addEventListener('mouseleave', () => {
-        cell.style.backgroundColor = 'black';
-        // cell.
-      });
+      // cell.addEventListener('mouseleave', () => {
+      //   cell.style.backgroundColor = 'black';
+
+      // });
     });
 
 
